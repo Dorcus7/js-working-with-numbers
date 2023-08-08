@@ -118,7 +118,7 @@ const result3 = parseInt("abc");
 
 // Log the above variables in the console. What is the output?
 
-// Run the following code. How would you edit the following code so that it runs properly?
+// Run the following code. How would you edit the following code so that it runs properly, while keeping the second value a string?
 const value = 4 / 'four';
 
 // Look up the isNaN() operator in MDN. What does it do? How would you use it?
