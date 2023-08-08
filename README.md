@@ -41,8 +41,8 @@
 
 
 ### Exerise 3 - Decades Calculator
-1. In the `js` file, follow the prompts to calculate the amount of snacks you will need to last you for the next decade.
 
+1. In the `js` file, follow the prompts to calculate the amount of meals you will need to last you for the next decade.
 
 ### Exerise 4 - PEMDAS
 1. In the `js` file, follow the prompts to calculate average scores of each student's subjects.

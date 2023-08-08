@@ -36,9 +36,9 @@ const profit = salesTotal - (wholesalePrice * quantity);
 /********************** Exercise 3 - Decades Calculator **********************/
 // Store your current age into a variable.
 // Store a maximum age into a variable (10 years older than you are now).
-// Store an estimated amount per day (as a number).
+// Store an estimated number of meals you should eat per day (as a number).
 // Calculate how many you would eat total for the next decade.
-// Output the result to the screen like so: "You will need [AMOUNT] to last you until the age of [AGE]".
+// Output the result to the screen like so: "You will need [AMOUNT] meals to last you until the age of [AGE]".
 
 
 
