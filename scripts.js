@@ -8,16 +8,25 @@ let salesTotal = retailPrice * quantity;
 let profit = salesTotal - (wholesalePrice * quantity);
 
 // Where might this code be used?
-
+//at wholesale store;
 
 // Run this code and log the profit variable in the console. What answer do you get?
 
-
 // How would you change this code to make the value of the quanitity variable dynamic?
+//by creating an array.
+//create a prompt that asks the user what the quantity is
+
+
+
+console.log(profit);
 
 
 /********************** Exercise 2 - Operators **********************/
 // Step 1: Calculate the sum of two numbers and log the result.
+let num1 = 10;
+let num2 = 5;
+
+
 
 
 // Step 2: Calculate the difference between two numbers and print the result.
@@ -31,6 +40,11 @@ let profit = salesTotal - (wholesalePrice * quantity);
 
 // Step 5: Check if a given number is even and print the result.
 
+console.log(num1 + num2);
+console.log(num1 - num2); 
+console.log(num1 * num2);
+console.log(num1 / num2); 
+console.log(num1 % num2 === 0); 
 
 
 /********************** Exercise 3 - Decades Calculator **********************/
@@ -40,6 +54,11 @@ let profit = salesTotal - (wholesalePrice * quantity);
 // Calculate how many you would eat total for the next decade.
 // Output the result to the screen like so: "You will need [AMOUNT] meals to last you until the age of [AGE]".
 
+let currentAge = 25;
+let maxAge = currentAge + 10;
+let mealsPerDay = 3;
+let totalMeals = (maxAge - currentAge) * 365 * mealsPerDay;
+
 
 
 
@@ -48,6 +67,8 @@ let profit = salesTotal - (wholesalePrice * quantity);
 // You are working on an education app and you want to be able to provide the average scores for students.
 // Here are the stored variables for a student and their subjects.
 
+
+
 let mathScore = 90;
 let scienceScore = 85;
 let englishScore = 80;
@@ -55,6 +76,8 @@ let historyScore = 95;
 
 // How would you get the average of their scores using JavaScript?
 
+let averageScore = (mathScore + scienceScore + englishScore + historyScore) / 4;
+console.log(`The average score is: ${averageScore}`);
 
 
 
@@ -64,11 +87,14 @@ let historyScore = 95;
 // Write a calculation that converts celsius to fahrenheit. To get the value of fahrenheit, you have to multiply the celsius value by 9/5 and then add 32. 
 
 
-// Prompt the user for the value of the temperature in celcius. 
 
+// Prompt the user for the value of the temperature in celcius. 
 
 // Run the code so that the following is logged to the console: 25°C is equal to 77°F
 
+let celsius = prompt('Enter temperature in Celsius:');
+let fahrenheit = (celsius * 9/5) + 32;
+console.log(`${celsius}°C is equal to ${fahrenheit}°F`);
 
 
 /********************** Exercise 6 - Assigning Values  **********************/
@@ -86,6 +112,17 @@ let historyScore = 95;
 // Divide the value of the variable by 20. Log the value.
 
 
+let num3 = parseFloat(prompt('Enter the first number:'));
+let num4 = parseFloat(prompt('Enter the second number:'));
+let result = num3 + num4;
+console.log(`Sum: ${result}`);
+result -= num1;
+console.log(`Subtraction: ${result}`);
+result += 100;
+console.log(`After adding 100: ${result}`);
+result /= 20;
+console.log(`After dividing by 20: ${result}`);
+
 
 
 
@@ -96,7 +133,8 @@ let decimalNumber = 7.8;
 
 // Console log the output to check your work.
 
-
+let roundedNumber = Math.round(decimalNumber);
+console.log(`Rounded number: ${roundedNumber}`);
 
 
 
@@ -107,7 +145,8 @@ let decimalNumber = 7.8;
 
 // Alert the user of the random number.
 
-
+let randomNumber = Math.floor(Math.random() * 6) + 1;
+alert(`Random number: ${randomNumber}`);
 
 
 
@@ -121,12 +160,14 @@ let result3 = parseInt("abc");
 
 // Without changing the below code, how could you write some new code between the variable declarations and the log, so that the answer is logged to the console? Use JavaScript number tools, please—don't reassign a number directly, as in: `wordVersion = 4`.
 
-let numVersion = 4;
-let wordVersion = 'four';
 
 
-
-console.log("Four divided by four is: " + (numVersion / wordVersion))
+console.log(result1); 
+console.log(result2); 
+console.log(result3);
 
 
 // Look up the isNaN() operator in MDN. What does it do? How would you use it?
+console.log(isNaN(result1));
+console.log(isNaN(result2)); 
+console.log(isNaN(result3)); 
